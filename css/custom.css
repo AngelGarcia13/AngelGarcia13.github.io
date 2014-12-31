@@ -30,6 +30,12 @@ hr {
 .subtitleBottom a{
     color: #fff;
     text-decoration: none;
+     -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.subtitleBottom a:hover{
+    color: #3e3e3e;
+    background-color: #fff;
 }
 .h1Custom{
 font-size: 52px;
@@ -196,10 +202,29 @@ font-family: 'robotothin';
 
 }
 .social{
+    color: #fff;
     font-size: 60px;
+}
+.social a{
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    color: #fff;
+    text-decoration: none;
+}
+.social a:hover{
+    color: #3e3e3e;
 }
 .socialFooter .fa{
     padding: 5px;
+}
+.socialFooter a{
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    color: #fff;
+    text-decoration: none;
+}
+.socialFooter a:hover{
+    color: #3e3e3e;
 }
 #footer .fi{
     cursor: pointer;

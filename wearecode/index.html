@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!--<link rel="shortcut icon" href="assets/img/favicon.png">-->
 
     <title>WE ARE CODE - {Slogan under construction}</title>
 
@@ -15,6 +15,7 @@
 
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
+    <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- Fonts from Google Fonts -->
@@ -27,10 +28,10 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top color-navbar">
+    <div class="navbar navbar-default navbar-fixed-top color-navbar" id="header">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,8 +44,12 @@
           </a>
         </div>
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Contact Us!</a></li>
+          <ul class="nav navbar-nav navbar-right headerMargin">
+          	<li><a href="#headerwrap" class="hidden"></a></li>
+          	<li><a href="#services">Services</a></li>
+          	<li><a href="#portfolio">Portfolio</a></li>
+          	<li><a href="#about">Team</a></li>
+            <li><a href="#contact">Contact Us!</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -53,10 +58,10 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 postZoom">
 					<h1>{Slogan under construction}</h1>				
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 postRight">
 					<img class="img-responsive" src="assets/img/ipad-hand.png" alt="">
 				</div>
 				
@@ -65,29 +70,29 @@
 	</div><!-- /headerwrap -->
 </div>
 	
-	<div class="container">
+	<div class="container" id="services" >
 		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-6 col-lg-offset-3 postZoom">
 				<h1>Services.<br/></h1>
 				<h3>We provide Mobile and Web Apps Development<!--, UI/UX design Business / Corporate Websites creation-->.</h3>
 			</div>
 		</div><!-- /row -->
 		
 		<div class="row mt centered">
-			<div class="col-lg-4">
+			<div class="col-lg-4 postBounceDown">
 				<img src="assets/img/ser01.png" width="180" alt="">
 				<h4>Mobile Apps</h4>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 			</div><!--/col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 postBounceDown">
 				<img src="assets/img/ser02.png" width="180" alt="">
 				<h4>Web Apps</h4>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
 
 			</div><!--/col-lg-4 -->
 
-			<div class="col-lg-4">
+			<div class="col-lg-4 postBounceDown">
 				<img src="assets/img/ser03.png" width="180" alt="">
 				<h4>Business / Corporate Websites</h4>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
@@ -102,14 +107,14 @@
 	
 	<div class="container" id="portfolio">
 		<div class="row mt centered">
-			<div class="col-lg-6 col-lg-offset-3">
+			<div class="col-lg-6 col-lg-offset-3 postZoom">
 				<h1>Portfolio.</h1>
 				<h3>Our latest projects, made with love.</h3>
 			</div>
 		</div><!-- /row -->
 	
 		<div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -123,7 +128,7 @@
                         <p class="text-muted">Graphic Design</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -137,7 +142,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -151,7 +156,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -165,7 +170,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -179,7 +184,7 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
+                <div class="col-md-4 col-sm-6 portfolio-item postZoom">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
@@ -200,19 +205,19 @@
 		<hr>
 	</div><!-- /container -->
 
-	<div class="container">
-		<div class="row mt centered">
+	<div class="container" id="about" >
+		<div class="row mt centered postZoom">
 			<div class="col-lg-6 col-lg-offset-3">
 				<h1>Our Awesome Team.</h1>
-				<h3>Description for the team.</h3>
+				<h3>We are a group of young professionals specialized in software development.</h3>
 			</div>
 		</div><!-- /row -->
 		
 		<div class="row mt centered">
-			<div class="col-md-4">
-				<img class="img-circle" src="assets/img/pic1.jpg" width="140" alt="">
+			<div class="col-md-4 postLeft">
+				<img class="img-circle" src="assets/img/angel.png" width="140" alt="">
 				<h4>Angel Garcia</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>Angel is a creative coder that loves web and mobile development, is also UI/UX designer, in his spare time is devoted to kill corrupt politicians, joke, he likes to play basketball and collecting Rap/Hip Hop instrumentals.</p>
 				<p>
 					<ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -225,10 +230,11 @@
 				</p>
 			</div><!--/col-lg-4 -->
 
-			<div class="col-md-4">
+			<div class="col-md-4 postBounceDown">
 				<img class="img-circle" src="assets/img/pic2.jpg" width="140" alt="">
 				<h4>Arturo Mejía</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+				</p>
 				<p>
 					<ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -241,10 +247,11 @@
 				</p>
 			</div><!--/col-lg-4 -->
 
-			<div class="col-md-4">
+			<div class="col-md-4 postRight">
 				<img class="img-circle" src="assets/img/pic3.jpg" width="140" alt="">
 				<h4>Jhonny Zabala</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+				</p>
 				<p>
 					<ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -256,8 +263,8 @@
                     </ul>
 				</p>
 			</div><!--/col-lg-4 -->
-
-			<div class="col-md-4 col-md-offset-4">
+			<div class="row">
+			<div class="col-md-4 col-md-offset-4 postBounceDown">
 				<img class="img-circle" src="assets/img/pic3.jpg" width="140" alt="">
 				<h4>Santiago Ramírez</h4>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
@@ -272,14 +279,46 @@
                     </ul>
 				</p>
 			</div><!--/col-lg-4 -->
+			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
 	
 	<div class="container">
 		<hr>
-		<p class="centered">WEARECODE® - 2015</p>
 	</div><!-- /container -->
+
+	<!--Contact Us-->
 	
+	<div id="contact" class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1 class="postZoom">Contact us</h1>
+	    		<h3 class="postZoom">We'd love to hear about your next project!</h3>
+			</div>
+		</div><!-- /row -->
+	    <div class="row mt centered">
+	          <div class="col-sm-6 col-xs-12 col-centered">
+	            <form name="sendmail" id="sendmail" action="#" method="POST">
+	                <input type="text" name="subject" placeholder="Subject..." required="" class="postLeft">
+	                <input type="email" name="email" placeholder="Email Address..." required="" class="postRight">
+	                <textarea rows="6" name="message" placeholder="Message" required="" class="postLeft"></textarea>
+	                <input type="submit" value="SEND" data-loading-text="Enviando..." class="postBounceDown"> 
+	                </form>
+	                <div id="myAlert" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
+	                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+	                  <strong>Message Sent!</strong> Thanks for contacting us.
+	                </div>
+	          </div><!-- /.col-lg-6 -->
+	          
+	    </div><!-- /.row -->
+    	<br>
+	</div>
+	<!-- / Contact Us-->
+	<div class="bg-1 section-parallax" id="footer" >
+	<div class="container">
+		<p class="centered footerP"><span>WEARECODE® - 2015</span></p>
+	</div><!-- /container -->
+	</div>
 	<!--Modals Showcase-->
 	<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -473,10 +512,32 @@
         </div>
     </div>
 
+    <div class="modal fade" id="myModal">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header" style="background: #3498db;color: #fff;">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">WEARECODE</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>
+	        Your message has been sent successfully.
+	        <br>
+	        We will contact you as soon as possible.
+	        </p>
+	      </div>
+	      <div class="modal-footer" style="text-align: center;">
+	        <button type="button" class="btn btn-default" data-dismiss="modal" style="background: #3498db;color: #fff;border: #3498db;">Close</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/jquery.viewportchecker.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
   </body>

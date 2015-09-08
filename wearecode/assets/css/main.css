@@ -415,3 +415,7 @@ vertical-align: middle;
     background-color: rgba(5, 94, 152,0.7);
     border-radius: 10px;
 }
+
+.titleProject{
+    word-wrap: break-word;
+}
